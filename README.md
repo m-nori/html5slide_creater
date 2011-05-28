@@ -17,7 +17,7 @@ rubyのmarkdownパーサを使っているので事前にインストールし�
 
 1. markdown形式でスライドの中身を作成する。
     `!slide`と記載することで新しいスライドを挿入できる。  
-    また、`!slide クラス名`と記載することでスライドのスタイルを適用させることができる。  
+    また、`!slide クラス名`と記載することでスライドのスタイルを適用させることもできる。  
     kramdownは通常のmarkdownを拡張したタグの記載が可能になっており、タグに属性を付与する記法も用意されている。  
     html5slidesで使用できるスタイル及び、kramdownの記法の詳細は各ページ参照。
     * [html5slides](http://code.google.com/p/html5slides/)
@@ -28,6 +28,6 @@ rubyのmarkdownパーサを使っているので事前にインストールし�
 % ruby tools/data_create.rb markdownファイル
 ```
 
-3. index.htmlをブラウザで開く。
-    slides.jsonがスライドに反映されていはず。
+
+index.htmlをブラウザで開くとslides.jsonがスライドに反映されていはず。
 
