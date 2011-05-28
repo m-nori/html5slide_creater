@@ -1,0 +1,12 @@
+var import_slides = 
+[
+  {'slide' : '<article class="biglogo"></article>'},
+  {'slide' : '<article><h1 id="section">テスト</h1><p>テスト<br />aaa<br />bbb</p><h2 id="h2">h2</h2><p>aaaaa</p></article>'},
+  {'slide' : '<article><h3 id="aaa">aaa</h3><ul>  <li>1    <ul>      <li>1.1</li>      <li>1.2</li>    </ul>  </li>  <li>2</li>  <li>3</li>  <li>4</li></ul></article>'},
+  {'slide' : '<article class="smaller"><h3 id="aaa">aaa</h3><pre><code>File.open(input, &amp;amp;apos;r:utf-8&amp;amp;apos;).each do |line|<br/>  if /^\!slide\s?(.*)$/ =~ line<br/>    slides &lt;&lt; slide if slide<br/>    slide = {}<br/>    slide[:class] = $1<br/>    slide[:text] = &amp;amp;quot;&amp;amp;quot;<br/>    next<br/>  end<br/>  slide[:text] &lt;&lt; line<br/>end<br/></code></pre><hr /></article>'},
+  {'slide' : '<article><ol>  <li>aaa    <ol>      <li>bbb</li>      <li>ccc</li>    </ol>  </li>  <li>ddd</li></ol></article>'},
+  {'slide' : '<article><table>  <thead>    <tr>      <th style="text-align: center">table</th>      <th style="text-align: center">1</th>      <th style="text-align: center">2</th>    </tr>  </thead>  <tbody>    <tr>      <td style="text-align: center">table</td>      <td style="text-align: center">1</td>      <td style="text-align: center">2</td>    </tr>    <tr>      <td style="text-align: center">table</td>      <td style="text-align: center">1</td>      <td style="text-align: center">2</td>    </tr>  </tbody></table></article>'},
+  {'slide' : '<article><dl>  <dt>term</dt>  <dd>test1</dd>  <dd>test2</dd></dl></article>'},
+  {'slide' : '<article><p>test1</p><h1 id="section">テスト1</h1></article>'},
+  {'slide' : '<article><h3 id="image">image</h3><p>&lt;image class=&amp;quot;centered&amp;quot; style=&amp;quot;height: 500px&amp;quot; src=&amp;quot;images/example-graph.png&amp;quot;/&gt;</p></article>'},
+]
