@@ -22,7 +22,7 @@ rubyのmarkdownパーサを使っているので事前にインストールし�
     html5slidesで使用できるスタイル及び、kramdownの記法の詳細は各ページ参照。
     * [html5slides](http://code.google.com/p/html5slides/)
     * [kramdown](http://kramdown.rubyforge.org/quickref.html)
-    * [サンプル](/m-nori/html5slide_creater/blob/master/tools/test.md)
+    * [サンプル](/m-nori/html5slide_creater/raw/master/tools/test.md)
 2. 以下のコマンドを実行してスライドのデータ(data/slides.json)を生成する。
 
 ```
