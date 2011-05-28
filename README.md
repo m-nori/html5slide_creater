@@ -28,6 +28,5 @@ rubyのmarkdownパーサを使っているので事前にインストールし�
 % ruby tools/data_create.rb markdownファイル
 ```
 
-
-index.htmlをブラウザで開くとslides.jsonがスライドに反映されていはず。
+### index.htmlをブラウザで開くとslides.jsonがスライドに反映されていはず。
 
