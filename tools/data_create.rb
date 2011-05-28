@@ -25,7 +25,11 @@ File.open(input, 'r:utf-8').each do |line|
       code = false
       slide[:text] << line
     else
-      slide[:text] << line.chomp << "!!br!!\n"
+      tmp = line.chomp
+      tmp.gsub!(/'/, "&apos;")
+      tmp.gsub!(/"/, "&quot;")
+      tmp.gsub!(/&/, "&amp;")
+      slide[:text] << tmp << "!!br!!\n"
     end
   else
     code = true if /^\~\~\~.*$/ =~ line
@@ -39,9 +43,6 @@ json = File.open(output_file, 'w:utf-8')
 json.puts 'var import_slides = '
 json.puts '['
 slides.each do |slide|
-  slide[:text].gsub!(/'/, "&apos;")
-  slide[:text].gsub!(/"/, "&quot;")
-  slide[:text].gsub!(/&/, "&amp;")
   html = Kramdown::Document.new(slide[:text]).to_html.delete("\r\n")
   html.gsub!(/\!\!br\!\!/, "<br/>")
   if slide[:class] != ""
